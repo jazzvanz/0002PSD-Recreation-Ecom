@@ -1,0 +1,1387 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+} 
+
+/*THIS IS WHERE MY CSS STARTS.*/
+
+html {
+  font-size:14px;
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color:lightgrey;
+}
+
+ body {
+    margin:0;
+   
+  }
+
+  .navOne {
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    text-transform: uppercase;
+    border-bottom:1px solid lightgrey;
+  }
+
+  .navOne > h4, i{ 
+    float:left;
+    margin:0;
+    padding:17px 30px;
+    color:grey;
+    border-right:1px solid lightgrey;
+    letter-spacing: 0.5px;
+    font-size:1rem;
+  }
+
+   .navOne h4 a {
+    text-decoration: none;
+    color:grey;
+   }
+
+    .navOne h4.login {
+      border-left:1px solid lightgrey;
+      float:right;
+    }
+
+    .navOne h4.cart {
+      border-right:none;
+      float:right;
+    }
+
+   .navOne i {
+    color:black;
+    padding-bottom:19px;
+    padding-top:19px;
+    margin-right:40%;
+   }
+
+   .navOne h4>span {
+    color:black;
+    background-color:lightgrey;
+    padding:5px 10px;
+    margin:13px;
+    margin-right:10px;
+   }
+
+   .navOne h4.wish {
+    float:right;
+   }
+
+   .navOne span.cart {
+    background-color:white;
+    border:2px solid black;
+   }
+
+   /*end of 1st navigation bar 
+   start css NAV two CSS*/
+   
+  .navTwo {
+    max-width:1200;
+    width:100%;
+  }
+
+  .navTwo img {
+    float:left;
+    margin:0;
+    /*padding:30px 15px;*/
+  }
+
+  .navTwo img{
+    padding-top:20px;
+    /*margin:0 135px;*/
+  }
+
+  .navBar h4 a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color:grey;
+    font-weight: 300;
+    font-size: 1rem;
+    padding:0px 20px 0 20px;
+    float:right;
+  }
+  
+  h4 a.feature {
+    padding-right:0;
+  }
+
+  .navBar {
+    width:55%;
+    float:right;
+    margin:0;
+    /*text-align:right;*/
+    /*padding:0px 15px;*/
+    display: inline-block;
+  }
+
+ .navBar h4 a:hover {
+        color:black;
+ }
+
+ /*end of css for navigation part two, beginning of part three*/
+
+ .navThree {
+  /*background:whitesmoke;*/
+  width:100%;
+ }
+
+
+  .navThree h5 {
+    float:left;
+    color:grey;
+    letter-spacing: 1px;
+    margin:0;
+    padding:110px 0 150px 0;
+  }
+
+ .navThree h5 a {
+  margin:0;
+  color:grey;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.85rem;
+
+ }
+
+ .navThree h2 a{
+  /*margin:40px 0px 40px 500px;*/
+  padding:100px 0 150px 0;
+  color:black;
+  font-family: "Roboto Slab", san-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size:1.28rem;
+  letter-spacing: 1px; 
+  float:right;
+ }
+
+ .navThree h5 a:hover {
+  color:black;
+ }
+
+ /*CSS FOR THE HEADER ENDS, CSS FOR THE HERO IMG BEGINS*/
+
+  div.container {
+   padding:0px;
+   margin:40px 150px 0 150px;
+
+  }
+
+  img.hero {
+    text-align:center;
+    padding:0;
+    width:100%;
+  }
+
+/*  CSS FOR CONTACT, ANF FORUM BEGINS> */
+
+section.contact {
+  margin:60px 0px;
+}
+
+address {
+  background:whitesmoke;
+  float:left;
+  width:30%;
+  text-align:left;
+  padding: 50px 0 0 50px;
+}
+
+ address h4 {
+   font-weight: 300;
+   color:grey;
+   font-style:normal;
+   line-height: 2.5rem;
+ }
+
+  div.iconbar i.icon {
+    border:none;
+    padding:25px;
+    margin-bottom:30px;
+    font-size: 1.5rem;
+  }
+
+  div.iconbar i.icon:hover {
+  color:black; 
+}
+
+
+  div.iconbar i.face {
+    padding-left:0;
+  }
+
+ div.form {
+  background:white;
+  /*border:1px solid black;*/
+  float:right;
+  width:70%;
+  padding:0px 20px 0 20px;
+ }
+
+  div.form h2 {
+    font-family: "Roboto Slab", san-serif;
+    text-transform: uppercase;
+    color:black;
+    font-size: 1.28rem;
+    padding:0;
+    margin:0 0 30px 0;
+    letter-spacing:.1rem;
+  }
+
+  div.form input {
+    border:none;
+    border-bottom: 2px solid lightgrey;
+    width:calc(33.33% - 25px);
+    line-height: 3.5rem;
+    margin-right:29px;
+  }
+
+  
+  div.form input.title {
+    width:100%;
+    margin-top:35px;
+  }
+
+  div.form input.website {
+    margin-right:0;
+  }
+
+  div.form textarea {
+    border:none;
+    border-bottom: 2px solid lightgrey;
+    width:100%;
+    margin-top:40px;
+    line-height: .5rem;
+  }
+
+  label {
+    visibility: hidden;
+    position:absolute;
+  }
+
+  /*CSS FOR FORM ENDS HERE. CSS FOR SUBMIT BUTTON STARTS*/
+
+  div.button input {
+      text-transform: uppercase;
+      color:black;
+      margin-top:55px;
+      margin-bottom:70px;
+      padding:0px 70px;
+      background:white;
+      border:2px solid black;
+      letter-spacing: .3rem;
+  }
+
+  div.button input:hover {
+    background-color:black;
+    color:white;
+  }
+  
+/*CSS FREE SHIPPING STARTS*/
+
+  .free {
+    clear:both;
+    font-family:  "Roboto Slab", san-serif;
+    text-transform: uppercase;
+    font-size:1.28rem;
+    color:black;
+     background:whitesmoke;
+    }
+
+    .ship, .return {
+       background:white; 
+      padding:40px 160px;
+      margin:60px 0;
+      letter-spacing: .1rem; 
+      box-shadow: .5px .5px .5px lightgrey;
+    }
+  
+  .ship {
+    float:left;
+    margin-right:0px;
+  }
+
+  .return {
+    float:right;
+    margin-left:0px;
+  }
+
+ section.columns  div.column>h2 {
+  font-family: "Roboto Slab", san-serif;
+   color:black;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+   font-size: 1.28rem;
+   margin-top: 30px;
+   margin-bottom:30px;
+  }
+
+  div.column {
+    width:20%;
+    margin:0;
+    padding:0;
+    float:left;
+    margin-right:50px;
+  }
+
+  div.column ul {
+    padding:0;
+  }
+
+  div.column ul li {
+    list-style: none;
+    line-height: 2.3rem;
+    color:grey;
+    font-weight: 300;
+  }
+
+  section.columns {
+    background:white;
+    margin-top:40px;
+    margin-bottom:60px;
+    z-index:2;
+  }
+
+  div.column ul li a {
+    text-decoration: none;
+    color:grey;
+  }
+
+  div.column ul li a:hover {
+    color:black;
+  }
+
+  /*Footer CSS STARTS HERE*/
+    div.iconfooter i {
+      border:none;
+      padding:20px;
+      margin:0;
+      margin:0 auto;
+    }
+
+      div.iconfooter i:hover{
+        color:black;
+      }
+
+
+    div.iconfooter {
+     margin:0 400px 0 400px;
+     text-align: center;
+
+    }
+
+    footer h5 {
+      padding:0;
+      margin:0;
+      color:grey;
+      position: absolute;
+      bottom:20px;
+      left:450px;
+      /*text-align: center;*/
+
+        }
+  
+
+    footer.contact {
+      /*background:pink;*/
+      /*margin:30px;*/
+      height:80px;
+      z-index:2;
+      position: absolute;
+    }
+
+    div.colorband {
+      width:100%;
+      height:80px;
+      background: whitesmoke;
+      margin:0;
+      z-index:0;
+    }
+
+    div.colorband2 {
+      width:100%;
+      height:248px;
+      background: whitesmoke;
+      margin:0;
+      z-index:-1;
+      position: absolute;
+      bottom:-990px;
+      left:0;
+    }
+    
+  div.colorband3 {
+      width:100%;
+      height:175px;
+      background: whitesmoke;
+      margin:0;
+      z-index:-1;
+      position: absolute;
+      top:175px;
+      left:0;
+    }
+  
+  /*this is where i started CSS for the main page*/
+ 
+    img.hero2 {
+    position: absolute;
+    /*border:2px dotted palegreen;*/
+    z-index:-2;
+    text-align:center;
+    padding:0;
+    width:100%;
+    margin:90px 0 0 0;
+    /*height:100vh;*/
+    }
+      
+    section.container, .main {
+      width:80%;
+      text-align: center;
+      margin:0 auto;
+      /*border:2px dotted pink;*/
+      z-index: 2;
+      /*position: relative;*/
+    }
+
+    div.herotext {
+      margin: 330px auto 210px auto;
+    }
+
+    div.herotext h1.design {
+      font-family: "Roboto Slab", san-serif;
+      font-size: 2.57rem;
+      text-transform: uppercase;
+      color:black;
+      letter-spacing: .8rem;
+    }
+
+  div.herotext h4.tool {
+    color:grey;
+    font-weight: 300;
+    font-size:1rem;
+    width:35%;
+    margin:30px auto;
+    line-height: 2.3rem;
+  }
+
+  /*start of the main middle column crazyiness */
+
+/*  kristens example css
+    
+    .container{
+      border: 2px solid black;
+      padding: 20px;
+      position: relative;
+    }
+
+    img{
+      float: left;
+      width: 67%;
+    }
+
+    .right{
+      background: blue;
+      width: 30%;
+      float: left;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      top: 20px;
+    }
+  
+*/   
+
+ .office {
+  /*border:2px solid black;*/
+  padding:20px;
+  position: relative;
+ }
+
+ .special {
+   margin-top:250px;
+ }
+
+ img.solidBox {
+  float:left;
+  width:67%;
+ }
+
+ .right {
+  /*background:#C6DC9D;*/
+  width:30%;
+  float:left;
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  top:20px;
+ }
+
+ .kitchen {
+  /*border:2px solid black;*/
+  padding:20px;
+  position: relative;
+ }
+
+  img.boxSolid {
+    float:right;
+    width:67%;
+  }
+
+  .left {
+    /*background:RGBA(242, 220, 134, 1);*/
+    width:30%;
+    float:left;
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    top:20px;
+  }
+
+  .box1 {
+    background:#C6DC9D;
+    padding:165px 0 100px 0;
+
+  }
+
+  .box2 {
+    background:RGBA(242, 220, 134, 1);
+    padding:165px 0 100px 0;
+
+  }
+
+  .box3 {
+    background:RGBA(166, 200, 236, 1);
+    padding:165px 0 100px 0;
+  }
+
+  .box4 {
+    background:RGBA(236, 140, 93, 1);
+    padding:165px 0 100px 0;
+
+  }
+
+  .box5 {
+    background:RGBA(187, 230, 212, 1);
+    padding:165px 0 100px 0;
+  }
+
+div.left p, div.right p {
+  text-transform: uppercase;
+  color:white;
+  font-family:"Roboto Slab", san-serif;
+  letter-spacing: .2rem;
+  /*margin:auto, auto;*/
+  /*text-align: center;*/
+}
+
+  section.clients {
+    margin:0px 0 50px 0;
+  }
+
+section.clients img {
+  padding:50px;
+}
+
+  section.clients img.client1 {
+    padding-left:0;
+  }
+
+  section.clients img.client6 {
+    padding-right:0;
+  
+  }
+
+/*start of the footer */
+
+footer.main {
+  width:100%;
+  /*margin-bottom:80px;*/
+}
+
+footer h6 {
+  margin:30px 60px 30px 30px;
+  padding:0;
+  /*text-align: center;*/
+  /*background:palegreen;*/
+  float:left;
+  font-family:"Roboto Slab", san-serif;
+  color:black;
+  text-transform: uppercase;
+  font-size:1.28rem;
+  letter-spacing:.3rem; 
+}
+
+div.iconfooterMain {
+  float:left;
+}
+
+div.iconfooterMain i {
+  border:none;
+  padding:34px 25px;
+  font-size:1rem;
+}
+div.iconfooterMain i:hover {
+  color:black;
+}
+
+h5.end {
+  text-align: center;
+  padding:20px;
+}
+
+div.iconfooterMain i.face {
+  padding-left:0;
+}
+
+input.email.footer {
+  float:right;
+  width:50%;
+  margin-top:20px;
+  padding:10px;
+  background:whitesmoke;
+  color:grey;
+}
+div.position {
+  position: relative;
+  width:100%;
+}
+
+div.colorband4 {
+  clear:both;
+  background:whitesmoke;
+  width:100%;
+  height:90px;
+  position: absolute;
+  bottom:0px;
+  z-index:-2;
+  /*margin-bottom:30px;*/
+}
+
+div.position {
+  position: relative;
+}
+
+div.colorband5 {
+  width:100%;
+  height:300px;
+  position: absolute;
+  top:-702px;
+  background:whitesmoke;
+  z-index: -2;
+}
+
+/*CSS FOR THE product PAGE STARTS HERE*/
+
+/*CSS for the gallery*/
+
+  section.gallery {
+    width:65%;
+    margin:0 0 80px 0;
+    /*border:2px dotted palegreen;*/
+    float:right;
+    /*width:80%;*/
+      }
+
+  section.gallery ul{ 
+    clear:both;
+    padding:0;
+    margin:0;
+  }
+
+  /*CSS pulled for kristens in class example*/
+  
+  section.gallery li {
+    padding:0;
+    float:left;
+    width:50%;
+    list-style:none;
+    position: relative;
+    float:left;
+    /*display:inline-block;*/
+  }
+
+  section.gallery li img {
+    width: calc(100% - 10px);
+    display:block;
+    margin:10px;
+  }
+
+  /* section.gallery li img:nth-child(odd) {
+          margin-left:0;
+        }*/
+
+    section.gallery li img.odd {
+      margin-left:0;
+    }
+
+    section.gallery li img.even {
+      margin-right:0;
+    }
+
+    section.gallery li img.top {
+      margin-top:0;
+    }
+
+
+
+  div.colorband7 {
+    width:100%;
+    height:200px;
+    position: absolute;
+    top:145px;
+    background:whitesmoke;
+    z-index: -2;
+  }
+
+  aside {
+    width:25%;
+    /*border:2px dotted pink;*/
+    float:left;
+    margin:0;
+  }
+
+  aside h2.productTitle {
+    /*background:palegreen;*/
+    color:black;
+    font-family:"Roboto Slab", san-serif;
+    font-size:1.28rem;
+    text-align: left;
+    letter-spacing: .1rem;
+    margin-bottom:25px;
+  }
+
+  aside div.line {
+    width:100%;
+    color:grey;
+    border:1px solid whitesmoke;
+    margin:20px 0 40px 0;
+  }
+
+  aside li {
+    list-style: none;
+    text-align:left;
+    padding:0;
+  }
+
+  aside li a {
+    color:grey;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 2.5rem;
+    /*letter-spacing: .1rem;*/
+  }
+
+  aside ul {
+    padding:0;
+    /*margin-bottom:20px;*/
+  }
+
+  aside input.range {
+    float:left;
+    margin:10px 0 10px 0;
+  }
+
+  aside div.price h4 {
+    clear:both;
+    text-align: left;
+    color:grey;
+    font-weight: 300;
+    line-height: 2rem;
+    padding-top:20px;
+
+  }
+
+  aside span {
+    color:lightgrey;
+    padding-left:20px;
+  }
+
+  aside h2.categories {
+    margin-top:0;
+  }
+
+  section.list {
+    clear:both;
+    /*float:left;*/
+    /*width:40px;*/
+  }
+
+    .navTwo {
+    margin-top:20px;
+    }
+
+
+  section.gallery li h5 {
+    font-family:"Roboto Slab", san-serif;
+    font-size:1.14rem;
+    color:black;
+    margin-bottom:15px;
+    /*margin:0 auto;*/
+    /*padding:0;*/
+
+  }  
+
+  section.gallery li h6 {
+    font-size: 1rem;
+    color:grey;
+    margin-top:0;
+    font-weight: 300;
+    /*position:absolute;*/
+
+  }
+
+  section.gallery li {
+    margin:0;
+  }
+
+  section.list {
+    margin-left:300px;
+    /*text-align: center;*/
+    /*margin:0 auto;*/
+  }
+
+section.list p {
+  float:left;
+  text align:center;
+  padding:0px 10px 0 10px;
+  font-size:1.28rem;
+  margin-top:0;
+}
+
+section.gallery>div.line {
+    clear:both;
+    width:100%;
+    color:grey;
+    border:1px solid whitesmoke;
+    margin:20px 0 30px 0;
+    position:relative;
+}
+
+  section.gallery div.bar, div.bar2 {
+    /*background:palegreen;*/
+    color:grey;
+    /*border:none;*/
+    /*margin:0;*/
+  }
+
+  section.gallery div.bar {
+    float:left;
+    width:50%;
+  }
+
+  section.gallery div.bar2 {
+    float:right;
+    width:50%;
+  }
+
+  section.gallery div.bar h4 {
+    padding:0 10px 0 0;
+    margin:0;
+    font-weight:300;
+    text-align: left;
+    display:inline-block;
+    float:left;
+  }
+  
+  section.gallery div.bar2 h4 {
+    margin:0;
+    font-weight:300;
+    text-align: right;
+    display:inline-block;
+    float:right;
+    padding:0 10px 0 0;
+  }
+
+
+  section.gallery div.bar i {
+    padding:0 10px 0 0;
+    margin:0;
+    border:none;
+    display:inline-block;
+  }
+
+  section.gallery div.bar2 i {
+    padding:0 10px 0 0;
+    margin:0;
+    border:none;
+    display:inline-block;
+    float:right;
+  }
+
+  section.gallery div.bar h4 span {
+    padding:0 10px 0 10px ;
+  }
+
+  section.gallery div.bar h4.insidebar {
+    padding:0 10px 0 30px;
+  }
+
+    section.gallery div.bar2 h4 {
+    padding:0 0 0 15px;
+}
+
+footer.product div.iconfooter {
+  margin-left:575px;
+  display:block;
+}
+
+footer.product h5{
+  margin-left:175px;
+  display:inline-block;
+}
+
+div.colorband8 {
+  position: absolute;
+  width:100%;
+  background: whitesmoke;
+  height:260px;
+  bottom:-1950px;
+  z-index: -2;
+
+}
+
+footer {
+  position: relative;
+}
+
+
